@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example - Café & Restaurant - La vraie cuisine est une forme d'art">
+    <title>Example – Cafe & Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Example</div>
+        <button class="menu-btn" id="menuBtn">
+            <span>MENU</span>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-close" id="sidebarClose">&times;</div>
+        <div class="sidebar-content">
+            <div class="sidebar-contact">
+                <h6>Phone :</h6>
+                <p>+212 123 456 789</p>
+
+                <h6>Address :</h6>
+                <p>123 Rue de l'Art, Casablanca, Morocco</p>
+
+                <h6>Email :</h6>
+                <p>contact@lartiste.ma</p>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chefs">Nos Chefs</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="sidebar-social">
+                <a href="https://www.facebook.com/example" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slide active">
+            <img src="hero1.png" alt="L'artiste Ça 100 Bon" class="slide-bg">
+            <div class="slide-content">
+                <h1>
+                    <span class="text-gold">L' ARTISTE</span><br>
+                    <span class="text-outline">ÇA 100 BON</span>
+                </h1>
+                <a href="#about" class="slide-btn">Discover Work</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="hero2.png" alt="La vraie cuisine est une forme d'art" class="slide-bg">
+            <div class="slide-content">
+                <h1>
+                    <span>LA VRAIE CUISINE</span><br>
+                    <span class="text-outline">est une forme d'</span><span class="text-accent">ART</span>
+                </h1>
+                <a href="#about" class="slide-btn">Discover Work</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="hero3.png" alt="Nos services pas comme les autres" class="slide-bg">
+            <div class="slide-content">
+                <h1>
+                    <span>NOS SERVICES</span><br>
+                    <span class="text-outline">PAS COMME</span> <span class="text-accent">LES AUTRES</span>
+                </h1>
+                <a href="#about" class="slide-btn">Discover Work</a>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="slider-arrow prev" id="prevSlide">‹</div>
+        <div class="slider-arrow next" id="nextSlide">›</div>
+
+        <div class="slider-nav">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- ART Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="art-section reveal">
+                <div class="art-title">ART</div>
+                <div class="art-content">
+                    <div>
+                        <h6 class="art-label">CUISINES</h6>
+                        <p class="art-subtitle text-gold">Ça 100 Bon</p>
+                        <h3>Example</h3>
+                        <p class="art-text">
+                            Branding is no longer simply about visual appeal (or the cherry in the apple pie example,
+                            as given in my earlier article). We develop creative solutions for small and big brands
+                            alike,
+                            build authentic product identities and much more.
+                        </p>
+                        <a href="#" class="slide-btn">PRESENTATION</a>
+                    </div>
+
+                    <div class="art-grid">
+                        <img src="food1.png" alt="Cuisine artistique" class="art-image">
+                        <img src="food2.png" alt="Plats gastronomiques" class="art-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="section chef-section" id="chefs">
+        <div class="container reveal">
+            <h6 class="chef-label">NOS CHEF'S CUISINE</h6>
+            <h2 class="chef-title">
+                <span class="text-gold">CHEF LOUZ</span> & <span class="text-gold">CHEF SIMO</span>,<br>
+                <span class="text-outline">une vision pour la cuisine.</span>
+            </h2>
+
+            <div class="chef-images">
+                <img src="chef1.png" alt="Chef Louz" class="chef-image">
+                <img src="chef1.png" alt="Chef Simo" class="chef-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section video-section" id="gallery">
+        <div class="container reveal">
+            <h6 class="video-label">Example en image .</h6>
+
+            <div class="video-container" id="videoTrigger">
+                <img src="hero2.png" alt="Example en vidéo" class="video-thumbnail">
+                <div class="video-play"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Popup -->
+    <div class="video-popup" id="videoPopup">
+        <div class="video-popup-content">
+            <div class="video-popup-close" id="videoClose">&times;</div>
+            <iframe id="videoFrame" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="testimonials-slider reveal">
+                <div class="testimonial active">
+                    <p class="testimonial-text">
+                        " Nulla metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum
+                        velit class aptent taciti sociosqu ad litora torquent per conubia nostra. "
+                    </p>
+                    <h6 class="testimonial-author">Alex Martin</h6>
+                    <p class="testimonial-role">Envato Customer</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        " Nulla metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum
+                        velit class aptent taciti sociosqu ad litora torquent per conubia nostra. "
+                    </p>
+                    <h6 class="testimonial-author">Terry Figueroa</h6>
+                    <p class="testimonial-role">Marketing Manager</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        " Nulla metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum
+                        velit class aptent taciti sociosqu ad litora torquent per conubia nostra. "
+                    </p>
+                    <h6 class="testimonial-author">Kaycee Hess</h6>
+                    <p class="testimonial-role">Human Resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogan Section -->
+    <section class="section slogan-section">
+        <div class="container reveal">
+            <h6 class="slogan-label">NOTRE SLOGAN :</h6>
+            <h2 class="slogan-title">
+                <span class="text-gold">Example</span><br>
+                <span class="text-outline">Example .</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p>All rights reserved © 2020, Example .</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
